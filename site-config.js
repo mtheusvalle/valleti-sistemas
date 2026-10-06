@@ -6,6 +6,6 @@ window.VALLETI_CONFIG = {
   gaMeasurementId: "",
   // Search Console HTML tag verification value, without the surrounding tag.
   searchConsoleVerification: "",
-  // Public canonical origin, for example: https://valletisistemas.com.br
-  siteUrl: ""
+  // Public canonical origin (current production domain: https://valleti.com.br).
+  siteUrl: "https://valleti.com.br"
 };

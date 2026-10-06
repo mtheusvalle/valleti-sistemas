@@ -2,6 +2,8 @@
 
 Site estático de apresentação e validação da procura por sistemas e automações para pequenos negócios de Castelo e região, ES.
 
+Domínio publicado: `https://valleti.com.br`.
+
 ## Configurar antes de publicar
 
 Edite `site-config.js`:

@@ -13,10 +13,10 @@
 
   document.querySelector("#year").textContent = new Date().getFullYear();
   if (config.siteUrl && /^https:\/\//i.test(config.siteUrl)) {
-    const canonical = document.createElement("link");
+    const canonical = document.querySelector('link[rel="canonical"]') || document.createElement("link");
     canonical.rel = "canonical";
     canonical.href = config.siteUrl.replace(/\/$/, "") + "/";
-    document.head.append(canonical);
+    if (!canonical.isConnected) document.head.append(canonical);
   }
   if (config.searchConsoleVerification) {
     const verification = document.createElement("meta");
